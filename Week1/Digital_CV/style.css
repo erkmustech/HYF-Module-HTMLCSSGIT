@@ -1,0 +1,252 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+}
+hr {
+  width: 90%;
+  margin: 2rem auto;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-color: green;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: orange;
+}
+h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #999;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+  color: #777;
+}
+button,
+.button_1 {
+  height: 4rem;
+  background: rgb(241, 76, 76);
+  border: none;
+  padding: 0 2rem;
+  color: #fff;
+  margin-bottom: 0rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #35424a;
+  position: fixed;
+  color: #000;
+  width: 100%;
+  padding-top: 3rem;
+  min-height: 7rem;
+  border-bottom: 3px solid #30a72e;
+  margin-top: 0;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 2rem;
+  margin-top: 3rem;
+}
+
+.item {
+  padding: 0 2rem;
+  margin-top: 1rem;
+  color: #777;
+  font-size: 1.6rem;
+  line-height: 1.4rem;
+  text-align: left;
+  padding-left: 4rem;
+}
+
+header #name {
+  float: left;
+  border-right: 1px solid #30a72e;
+  padding-right: 3rem;
+}
+
+header #name h1 {
+  margin: 0;
+  color: #eee;
+  text-transform: uppercase;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight {
+  color: #30a72e;
+  font-weight: bold;
+  transition: uppercase;
+}
+
+header .current a,
+header a:hover {
+  color: #30a72e;
+  font-weight: bold;
+}
+
+#personal-notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 80rem;
+  text-align: center;
+  align-items: center;
+  color: #35424a;
+  margin: 1rem 5rem;
+}
+
+.col-left {
+  grid-column: 1 / 2;
+  padding: 5rem 10rem;
+  border-right: 1px solid #30a72e;
+}
+
+.heading {
+  margin-top: 5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #eee;
+  margin-bottom: 5rem;
+  background-color: #30a72e;
+}
+
+#personal-notes p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.col-right {
+  grid-column: 2 / 3;
+  justify-content: center;
+  justify-self: center;
+}
+
+.col-right img {
+  border-radius: 50%;
+  width: 100%;
+  height: 30rem;
+  justify-self: center;
+  align-self: cener;
+}
+
+#projects {
+  margin-top: rem;
+}
+
+.project {
+  float: left;
+  width: 30%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.project img {
+  width: 9rem;
+}
+
+#education li {
+  list-style: none;
+  padding: 2rem;
+  border: #e9ebec solid 1px;
+  margin-bottom: 5px;
+}
+
+.sidebar-b {
+  margin: 5rem 20rem;
+}
+
+#contact-form {
+  background: #35424a;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: auto;
+  color: #fff;
+  padding: 2rem 5rem;
+  justify-self: center;
+}
+
+#contact-form .quote input,
+#contact-form .quote.textarea {
+  color: #35424a;
+  width: 60%;
+  padding: 1rem;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  color: #fff;
+  background: #35424a;
+  text-align: center;
+}
+
+/* responsive for diff viewpoints */
+@media (max-width: 800px) {
+  #name,
+  header nav,
+  header nav li,
+  #personal-notes h1,
+  #personal-notes form,
+  #projects .box,
+  article,
+  #sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  header {
+    padding-bottom: 20px;
+  }
+  #work-ex h1 {
+    margin-top: 40px;
+  }
+
+  #contact-form button,
+  .quote button {
+    display: block;
+    width: 100%;
+  }
+  #contact-form form input[type="email"],
+  .quote input,
+  .quote .quote.textarea {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  header nav li a {
+    font-size: 14px;
+  }
+}

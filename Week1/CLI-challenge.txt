@@ -1,1 +1,24 @@
 
+1 . How do I create a hidden file or folder? How do I display it in the CLI?
+   A ; 
+   1. To create hidden folder put a "." Before the name of the folder e.g.  -> Mkdir .week1
+      To creat hidden file same methods  e.g. -> Touch .homework.text
+
+   2.  To show the hidden file : ls -al 
+
+   3. To create multiple folder: the syntax should be like in this in Mac : mkdir file1 file2 file3;
+      Or mkdir file{1,2,3,4};
+
+
+
+2 . How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+   A: by using parent child architect simple in CSS, "/" we can create nested folders: 
+   e.g.   mkdir -p dir1/dir2/dir3/dir4/dir5
+    
+3. How do I append a message to a file, without a newline character, so the output would be:
+
+   There are few methods to solve this inquiry, one of the common method to write two lines separately by terminal(lunix),  the syntax is : echo -e "firtMessage \n secondMessage">>  target-file
+
+    
+    28/3/2021 
+    Hudawaerdi Aibaidula 

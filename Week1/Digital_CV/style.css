@@ -62,10 +62,16 @@ header {
   color: #000;
   width: 100%;
   padding-top: 3rem;
-  min-height: 7rem;
+  height: 7rem;
   border-bottom: 3px solid #30a72e;
   margin-top: 0;
 }
+
+
+.nav-checkbox {
+  display: none;
+}
+
 
 header a {
   color: #fff;
@@ -100,6 +106,7 @@ header #name h1 {
   margin: 0;
   color: #eee;
   text-transform: uppercase;
+ letter-spacing:4px;
 }
 
 header nav {
@@ -164,23 +171,23 @@ header a:hover {
 }
 
 #projects {
-  margin-top: rem;
+  margin-top: 1rem;
 }
 
 .project {
   float: left;
   width: 30%;
-  padding: 1rem;
+  padding: 10px;
   text-align: center;
 }
 
 .project img {
-  width: 9rem;
+  width: 90px;
 }
 
-#education li {
+ul#education li {
   list-style: none;
-  padding: 2rem;
+  padding: 20px;
   border: #e9ebec solid 1px;
   margin-bottom: 5px;
 }
@@ -214,8 +221,326 @@ footer {
   text-align: center;
 }
 
+
+
+
 /* responsive for diff viewpoints */
-@media (max-width: 800px) {
+@media (max-width: 50rem) {
+  html {
+  font-size: 50%;
+}
+
+.container {
+  width: 90%;
+}
+  
+  
+hr {
+  width: 90%;
+  margin: 2rem auto;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-color: green;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: orange;
+}
+h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: #999;
+}
+
+p {
+  line-height: 2rem;
+  color: #777;
+}
+button,
+.button_1 {
+  height: 2rem;
+  padding: 0 1rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  height:4rem;
+}
+header h1{
+    text-align:center;
+    margin-top:1rem;
+    font-size:3rem;
+  } 
+.nav {
+  height: 0;
+  width: 0;
+}
+.nav-checkbox {
+  display: none;
+}
+  
+.nav-button {
+  height: 5rem;
+  width: 5rem;
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  z-index: 2000;
+  text-align: center;
+  cursor: pointer;
+  border:1px solid #fff;
+  background-color:#35424a;
+  border-radius:50%;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.nav-overlay {
+  height: auto;
+  transform: translateX(-200rem);
+  top: 4rem;
+  z-index: 1500;
+  transition: all 0.5s;
+  background-color: #35424a;
+  font-size:2rem;
+}
+
+.nav-item {
+  display:block;
+  margin-bottom: 5px;
+  margin-top: 1rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: block;
+  text-align:left;
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  color: #fff;
+  text-transform: lowercase;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #30a72e;
+  font-weight: bold;
+  
+}
+
+.nav-checkbox:checked ~ .nav-overlay {
+  position: fixed;
+  width:20rem;
+  transform: translateX(-4rem);
+  transition: transform 0.5s;
+  background-color: #35424a;
+  font-size: 2.5rem;
+  margin-bottom:1rem;
+  margin-top:5rem;
+  padding-top:2rem;
+  margin-left: 0;
+  opacity: 0.8;
+  z-index: 1500;
+}
+
+.nav-bar {
+  position: relative;
+  margin-top: 2.3rem;
+}
+
+.nav-bar,
+.nav-bar::before,
+.nav-bar::after {
+  width: 3rem;
+  height: 2px;
+  background-color: #fff;
+  display: inline-block;
+}
+
+.nav-bar::before,
+.nav-bar::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.nav-bar::before {
+  top: -0.7rem;
+}
+.nav-bar::after {
+  top: 0.7rem;
+}
+
+.nav-checkbox:checked + .nav-button .nav-bar {
+  background-color: transparent;
+  transition: 0.2s background linear 0.1s, 0.2s top linear,
+    0.2s transform linear 0.2s;
+}
+.nav-checkbox:checked + .nav-button .nav-bar::before {
+  top: 0;
+  transform: rotate(45deg);
+  transition: 0.2s background linear 0.1s, 0.2s top linear,
+    0.2s transform linear 0.2s;
+}
+.nav-checkbox:checked + .nav-button .nav-bar::after {
+  top: 0;
+  transform: rotate(-45deg);
+  transition: 0.2s background linear 0.1s, 0.2s top linear,
+    0.2s transform linear 0.2s;
+}
+
+.item {
+  padding: 0 2rem;
+  margin-top: 1rem;
+  color: #777;
+  font-size: 1.6rem;
+  line-height: 1.4rem;
+  text-align: left;
+  padding-left: 4rem;
+}
+
+header #name {
+  float: left;
+  border-right: 1px solid #30a72e;
+  padding-right: 3rem;
+}
+
+header #name h1 {
+  margin: 0;
+  color: #eee;
+  text-transform: uppercase;
+}
+
+header nav {
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight {
+  color: #30a72e;
+  font-weight: bold;
+  transition: uppercase;
+}
+
+header .current a,
+header a:hover {
+  color: #30a72e;
+  font-weight: bold;
+}
+
+#personal-notes {
+  display: block;
+  height:auto;
+  text-align: center;
+  align-items: center;
+  color: #35424a;
+  margin: 1rem 3rem;
+}
+
+.col-left {
+  padding: 1rem 3rem;
+  border-bottom: 1px solid #30a72e;
+  border-right:none;
+}
+
+.heading {
+  margin: 2rem 5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #eee;
+  background-color: #30a72e;
+}
+
+#personal-notes p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.col-right {
+  margin-top:3rem;
+  justify-content: center;
+  justify-self: center;
+}
+
+.col-right img {
+  border-radius: 50%;
+  width: 50%;
+  height: 22rem;
+  justify-self: center;
+  align-self: cener;
+}
+
+#projects {
+  margin-top: 1rem;
+  display:block;
+  text-align:center;
+}
+
+.project {
+  display:block;
+  width:100%;
+  text-align: center;
+  padding:0;
+  margin: 2rem auto;
+}
+
+.project img {
+  width: 90px;
+}
+  
+  .project p{
+    padding:0 2rem;
+    text-align:center;
+  }
+
+ul#education li {
+  list-style: none;
+  padding: 20px;
+  border: #e9ebec solid 1px;
+  margin-bottom: 5px;
+}
+
+.sidebar-b {
+  margin:1rem 3rem;
+}
+
+#contact-form {
+  background: #35424a;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  width: auto;
+  color: #fff;
+  justify-self: center;
+}
+
+#contact-form .quote input,
+#contact-form .quote.textarea {
+  color: #35424a;
+  width: 90%;
+  padding: 1rem auto;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  color: #fff;
+  background: #35424a;
+  text-align: center;
+}
+  
   #name,
   header nav,
   header nav li,
@@ -243,7 +568,7 @@ footer {
   #contact-form form input[type="email"],
   .quote input,
   .quote .quote.textarea {
-    width: 100%;
+    width: 90%;
     margin-bottom: 5px;
   }
   header nav li a {

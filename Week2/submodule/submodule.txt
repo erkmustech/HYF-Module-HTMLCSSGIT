@@ -1,1 +1,1 @@
-how can we create submodule inside the git repo
+you can see the submodule contents from <favorite-cmd-commands> repository. 

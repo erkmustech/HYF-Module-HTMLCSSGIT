@@ -1,1 +1,0 @@
-you can see the submodule contents from <favorite-cmd-commands> repository. 

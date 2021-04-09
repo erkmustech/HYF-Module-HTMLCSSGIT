@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
@@ -39,6 +40,7 @@ h3 {
   line-height: 2rem;
   color: orange;
 }
+
 h4 {
   font-size: 1.6rem;
   font-weight: 400;
@@ -84,13 +86,13 @@ header a {
   font-size: 1.6rem;
 }
 
-header #name {
+header #logo {
   float: left;
   border-right: 1px solid #30a72e;
   padding-right: 3rem;
 }
 
-header #name h1 {
+header #logo h1 {
   margin: 0;
   color: #eee;
   text-transform: uppercase;
@@ -127,7 +129,7 @@ header a:hover {
 
 .profile {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   margin-top: 5rem;
 }
 
@@ -153,18 +155,19 @@ header a:hover {
   align-items: center;
   justify-content: center;
   padding-top: 10rem;
-   padding-top: 10rem;
+  padding-top: 10rem;
 }
 
 
 .profile-pic img {
-  border-top:30rem;
-  width:40%;
+  border-top: 30rem;
+  width: 40%;
   height: 70%;
   border-radius: 50%;
 
 
 }
+
 projects {
   margin-top: 1rem;
 }
@@ -239,6 +242,7 @@ footer {
   h3 {
     font-size: 1.8rem;
   }
+
   h4 {
     font-size: 1.6rem;
     line-height: 1.4rem;
@@ -248,7 +252,7 @@ footer {
     line-height: 2rem;
   }
 
-  #name,
+  #logo,
   header nav,
   header nav li,
   #profile,
@@ -259,8 +263,8 @@ footer {
   #contact-form,
   .profile-text,
   .profile-pic {
-    display:block;
-    float:none;
+    display: block;
+    float: none;
     text-align: center;
     width: 100%;
     margin: 2rem auto;
@@ -300,7 +304,7 @@ footer {
     z-index: 1500;
   }
 
-  .nav-checkbox:checked ~ .nav-overlay {
+  .nav-checkbox:checked~.nav-overlay {
     position: fixed;
     width: 20rem;
     transform: translateX(-4rem);
@@ -365,42 +369,45 @@ footer {
   .nav-bar::before {
     top: -0.7rem;
   }
+
   .nav-bar::after {
     top: 0.7rem;
   }
 
-  .nav-checkbox:checked + .nav-button .nav-bar {
+  .nav-checkbox:checked+.nav-button .nav-bar {
     background-color: transparent;
     transition: 0.2s background linear 0.1s, 0.2s top linear,
       0.2s transform linear 0.2s;
   }
-  .nav-checkbox:checked + .nav-button .nav-bar::before {
+
+  .nav-checkbox:checked+.nav-button .nav-bar::before {
     top: 0;
     transform: rotate(45deg);
     transition: 0.2s background linear 0.1s, 0.2s top linear,
       0.2s transform linear 0.2s;
   }
-  .nav-checkbox:checked + .nav-button .nav-bar::after {
+
+  .nav-checkbox:checked+.nav-button .nav-bar::after {
     top: 0;
     transform: rotate(-45deg);
     transition: 0.2s background linear 0.1s, 0.2s top linear,
       0.2s transform linear 0.2s;
   }
 
-.profile-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding:0;
-}
+  .profile-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
 
-.profile-text p {
-  font-size: 1.5rem;
-  text-align: justify;
-  color: #505050;
-  line-height: 2.5rem;
-  padding:1rem 3rem;
-}
+  .profile-text p {
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #505050;
+    line-height: 2.5rem;
+    padding: 1rem 3rem;
+  }
 
 }

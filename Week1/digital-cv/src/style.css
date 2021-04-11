@@ -5,9 +5,16 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
+  font-size: 1.5rem;
   padding: 0;
   margin: 0;
+  list-style: none;
   background-color: #f4f4f4;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -183,11 +190,15 @@ projects {
   width: 9rem;
 }
 
-#education li {
+
+
+#education li,
+#work-experience li {
   list-style: none;
   padding: 20px;
   border: #e9ebec solid 1px;
   margin-bottom: 5px;
+  font-size: 1.6rem;
 }
 
 .item {
@@ -229,8 +240,56 @@ footer {
   text-align: center;
 }
 
-/* responsive for diff viewpoints */
-@media screen and (max-width: 50rem) {
+/* for tab  */
+
+/* @media screen and (max-width: 1024px) {
+  html {
+    font-size: 55%;
+  }
+
+
+  .profile-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .profile-text p {
+    font-size: 1.5rem;
+    text-align: justify;
+    color: #505050;
+    line-height: 2.5rem;
+    padding: 1rem 3rem;
+  }
+
+  .profile-pic {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10rem;
+    padding-top: 10rem;
+  }
+
+
+  .profile-pic img {
+    border-top: 30rem;
+    width: 50%;
+    height: 60%;
+    border-radius: 50%;
+
+
+  }
+
+} */
+
+
+
+
+/* responsive for mob  */
+@media screen and (max-width: 370px) {
   html {
     font-size: 50%;
   }
@@ -258,7 +317,7 @@ footer {
   #profile,
   #projects,
   .project,
-  #work-ex,
+  #work-experience,
   #education,
   #contact-form,
   .profile-text,
@@ -409,5 +468,16 @@ footer {
     line-height: 2.5rem;
     padding: 1rem 3rem;
   }
+
+  .item {
+    padding: 0 2rem;
+    margin-top: 1rem;
+    color: #777;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    text-align: left;
+    padding-left: 3rem;
+  }
+
 
 }

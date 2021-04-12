@@ -1,0 +1,298 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 40vh;
+  margin-top: 0;
+  background-image: linear-gradient(to top, rgba(52, 207, 235, 0.8), rgba(26, 119, 173, 0.8)), url(https://i.postimg.cc/76YXtgbT/fighter-jet-f-16.jpg);
+  background-size: auto;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+header h1 {
+  font-size: 8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: #eee;
+}
+
+section {
+  width: 90vw;
+  margin: 2rem auto;
+  text-align: center;
+  clear: both;
+  list-style: none;
+}
+
+section h2 {
+  color: #1a77ad;
+  font-size: 2.8rem;
+  background-color: #ccc;
+  margin: 2rem auto;
+  padding: 5px auto;
+}
+
+section h3 {
+  color: #1a77ad;
+  font-size: 1.8rem;
+  margin: 3rem auto;
+  padding: 5px 1rem;
+  border: 1px solid #ffd86e;
+  border-radius: 5px;
+  background-color: #ffd86e;
+  width: auto;
+}
+
+section li {
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 2rem;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid #eee;
+  box-shadow: 1px 2px 5px #999;
+  padding: 2rem 2rem;
+  height: 90rem;
+}
+
+section li:not(:nth-child(3)),
+section li:not(:nth-child(7)),
+section li:not(:nth-child(11)) {
+  margin-right: 2vw;
+}
+
+section li img {
+  width: 70%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  margin: 2rem auto;
+  transition: all 0.3s ease;
+}
+
+section li img:hover {
+  transform: scale(1.8);
+  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+  border-radius: 0%;
+  margin: 2rem auto;
+}
+
+.grid-floats li:first-child {
+  float: left;
+  width: 45%;
+  height: 60rem;
+}
+
+.grid-floats li:nth-child(2) {
+  float: left;
+  width: 21%;
+  height: 60rem;
+}
+
+.grid-floats li:nth-child(3) {
+  float: left;
+  width: 21%;
+  height: 60rem;
+}
+
+.grid-floats li:nth-child(n+4) {
+  float: left;
+  width: 21%;
+  height: 52rem;
+}
+
+.grid-floats p {
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+.grid-flex {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.grid-flex li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: justify;
+  height: 50rem;
+}
+
+.grid-flex li:not(:first-child) {
+  width: 21%;
+}
+
+.grid-flex li:first-child,
+.grid-flex li:nth-child(2),
+.grid-flex li:nth-child(3) {
+  height: 70rem;
+}
+
+.grid-flex li:first-child {
+  width: 45%;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  section li {
+    margin: 2rem;
+    height: 40rem;
+  }
+
+  section li:not(:nth-child(2)),
+  section li:not(:nth-child(5)),
+  section li:not(:nth-child(8)),
+  section li:not(:nth-child(8)) {
+    margin-right: 3vw;
+  }
+
+  .grid-floats li:first-child,
+  .grid-floats li:nth-child(2) {
+    float: left;
+    width: 45%;
+    height: 50rem;
+  }
+
+  .grid-floats li:nth-child(3),
+  .grid-floats li:nth-child(n+3) {
+    float: left;
+    width: 30%;
+    height: 40rem;
+  }
+
+  .grid-flex {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .grid-flex li {
+    display: flex;
+  }
+
+  .grid-flex li:not(:first-child),
+  .grid-flex li:not(:nth-child(2)) {
+    width: 30%;
+    height: 40rem;
+    flex-direction: column;
+  }
+
+  .grid-flex li:first-child,
+  .grid-flex li:nth-child(2) {
+    width: 45%;
+    height: 50rem;
+    flex-direction: column;
+  }
+}
+
+/* Responsive design for mobile */
+@media only screen and (max-width: 56em) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    line-height: 1.2;
+  }
+
+  header {
+    height: 20vh;
+  }
+
+  header h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+
+  section {
+    width: 95vw;
+    margin: 1rem auto;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+    margin: 1rem auto;
+    padding: 5px auto;
+  }
+
+  section h3 {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    padding: 5px 1rem;
+  }
+
+  section li {
+    display: block;
+    width: 100%;
+    margin: 1rem;
+    padding: 1rem;
+    height: 50vh;
+    margin: 2rem auto;
+  }
+
+  .grid-floats li {
+    display: block;
+    width: 95%;
+    height: 50rem;
+  }
+
+  .grid-floats li:nth-child(1),
+  .grid-floats li:nth-child(n+2) {
+    display: block;
+    width: 95%;
+    height: 50rem;
+  }
+
+  .grid-flex {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .grid-flex li {
+    display: flex;
+  }
+
+  .grid-flex li:not(:first-child),
+  .grid-flex li:not(:nth-child(2)) {
+    width: 100%;
+    height: 50rem;
+    flex-direction: column;
+  }
+
+  .grid-flex li:first-child,
+  .grid-flex li:nth-child(2) {
+    width: 100%;
+    height: 50rem;
+    flex-direction: column;
+  }
+}

@@ -33,28 +33,28 @@
     flex: 1;
     display: flex;
     min-width: 250px;
-    height: 20vh;
+    height: 100px;
     align-items: center;
     justify-content: center;
     img {
-      height: 12vh;
+      height: 80%;
     }
   }
-  input{
-    height:40px;
-    width:200px;
-    padding:5px auto;
-    margin-right:10px;
-    
-  }
-
-  .sign-in {
-    min-width: 250px;
+   
+   .sign-in {
+    min-width: 150px;
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 15px;
+  }
+  
+  input{
+    height:40px;
+    width:150px;
+    padding:5px auto;
+    margin-right:10px;  
   }
 
   button {

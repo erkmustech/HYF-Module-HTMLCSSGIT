@@ -5,19 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: arial, sans-sarf;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: arial, sans-sarf;
 }
+
+
+a,
+a:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+html {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
 
 .body {
   display: grid;
@@ -26,7 +33,6 @@
   justify-content: center;
   grid-gap: 20px;
   align-items: center;
-  font-size: 14px;
 }
 
 .header {
@@ -95,7 +101,7 @@ main .weeks {
   transition: all 0.3s;
 }
 
-main .weeks >* {
+main .weeks>* {
   align-items: center;
   justify-items: center;
 }

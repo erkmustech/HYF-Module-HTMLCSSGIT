@@ -27,6 +27,7 @@ html {
 
 
 .body {
+  width:1200px;
   display: grid;
   grid-template-rows: 100px minmax(400px, min-content) 50px;
   grid-template-columns: 5rem [cal-start] repeat(2, minmax(250px, 1fr)) [cal-end] 5rem;

@@ -23,11 +23,12 @@ a:visited {
 html {
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
+  max-width:1440px;
 }
 
 
 .body {
-  width:1200px;
+  max-width:1440px;
   display: grid;
   grid-template-rows: 100px minmax(400px, min-content) 50px;
   grid-template-columns: 1rem [cal-start] repeat(2, minmax(250px, 1fr)) [cal-end] 1rem;

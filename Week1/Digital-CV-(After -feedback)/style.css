@@ -147,9 +147,11 @@ ul {
 header {
   display: flex;
   background: #35424a;
+  position: fixed;
   color: #fff;
   border-bottom: 3px solid green;
   height: 10rem;
+  width:100%;
 }
 
 .logo-box {

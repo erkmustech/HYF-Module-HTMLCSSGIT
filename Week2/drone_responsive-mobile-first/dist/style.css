@@ -1,6 +1,3 @@
-// just opposite leptop first method, let's make a little change in order, start with mobile first
-
-// generic properties
 *,
 *::after,
 *::before {
@@ -8,7 +5,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 55%;
 }
 
 p {
@@ -32,10 +29,7 @@ header {
   width: 100vw;
   height: 30vh;
   margin-top: 0;
-  background-image: linear-gradient(to top,
-      rgba(230, 100, 101, 0.8),
-      rgba(26, 119, 173, 0.8)),
-    url(https://i.postimg.cc/76YXtgbT/fighter-jet-f-16.jpg);
+  background-image: linear-gradient(to top, rgba(230, 100, 101, 0.8), rgba(26, 119, 173, 0.8)), url(https://i.postimg.cc/76YXtgbT/fighter-jet-f-16.jpg);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   background-size: auto;
   background-position: center;
@@ -83,8 +77,6 @@ section h3 {
   width: auto;
 }
 
-// mobile version spesific values
-
 section li {
   background-color: #fff;
   border-radius: 1rem;
@@ -106,10 +98,9 @@ section li img {
   transition: all 0.3s ease;
 }
 
-//for tab version
 @media only screen and (min-width: 600px) {
   html {
-    font-size: 65%;
+    font-size: 60%;
   }
 
   header {
@@ -118,14 +109,14 @@ section li img {
   }
 
   .grid-floats li:first-child,
-  .grid-floats li:nth-child(2) {
+.grid-floats li:nth-child(2) {
     float: left;
     width: 44%;
     height: 55rem;
   }
 
   .grid-floats li:nth-child(3),
-  .grid-floats li:nth-child(n + 3) {
+.grid-floats li:nth-child(n+3) {
     float: left;
     width: 28%;
     height: 50rem;
@@ -141,26 +132,22 @@ section li img {
     display: flex;
     grid-gap: 2%;
     height: 50rem;
-
-    &:not(:first-child),
-    &:not(:nth-child(2)) {
-      width: 28%;
-      flex-direction: column;
-    }
+  }
+  .grid-flex li:not(:first-child), .grid-flex li:not(:nth-child(2)) {
+    width: 28%;
+    flex-direction: column;
   }
 
   .grid-flex li:first-child,
-  .grid-flex li:nth-child(2) {
+.grid-flex li:nth-child(2) {
     width: 44%;
     flex-direction: column;
     height: 55rem;
   }
 }
-
-//for desktop version
 @media only screen and (min-width: 1040px) {
   html {
-    font-size: 85%;
+    font-size: 65%;
   }
 
   header {
@@ -172,12 +159,9 @@ section li img {
     padding: 2rem 2rem;
     height: 50rem;
     margin-top: 3rem;
-
-    &:not(:nth-child(3)),
-    &:not(:nth-child(7)),
-    &:not(:nth-child(11)) {
-      margin-right: 3rem;
-    }
+  }
+  .grid-floats li:not(:nth-child(3)), .grid-floats li:not(:nth-child(7)), .grid-floats li:not(:nth-child(11)) {
+    margin-right: 3rem;
   }
 
   .grid-floats li:first-child {
@@ -198,7 +182,7 @@ section li img {
     height: 60rem;
   }
 
-  .grid-floats li:nth-child(n + 4) {
+  .grid-floats li:nth-child(n+4) {
     float: left;
     width: 22%;
     height: 52rem;
@@ -208,19 +192,19 @@ section li img {
     display: flex;
     margin-top: 3rem;
     flex-direction: column;
+    flex-gap: 3rem;
     align-items: center;
     justify-content: space-between;
     text-align: justify;
     height: 50rem;
-
-    &:not(:first-child) {
-      width: 22%;
-    }
+  }
+  .grid-flex li:not(:first-child) {
+    width: 22%;
   }
 
   .grid-flex li:first-child,
-  .grid-flex li:nth-child(2),
-  .grid-flex li:nth-child(3) {
+.grid-flex li:nth-child(2),
+.grid-flex li:nth-child(3) {
     height: 60rem;
   }
 

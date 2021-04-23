@@ -8,9 +8,8 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 55%;
 }
-
 p {
   text-align: justify;
   padding: 0 1rem;
@@ -32,9 +31,11 @@ header {
   width: 100vw;
   height: 30vh;
   margin-top: 0;
-  background-image: linear-gradient(to top,
+  background-image: linear-gradient(
+      to top,
       rgba(230, 100, 101, 0.8),
-      rgba(26, 119, 173, 0.8)),
+      rgba(26, 119, 173, 0.8)
+    ),
     url(https://i.postimg.cc/76YXtgbT/fighter-jet-f-16.jpg);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   background-size: auto;
@@ -109,14 +110,12 @@ section li img {
 //for tab version
 @media only screen and (min-width: 600px) {
   html {
-    font-size: 65%;
+    font-size: 60%;
   }
-
   header {
     height: 10vh;
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
   }
-
   .grid-floats li:first-child,
   .grid-floats li:nth-child(2) {
     float: left;
@@ -141,7 +140,6 @@ section li img {
     display: flex;
     grid-gap: 2%;
     height: 50rem;
-
     &:not(:first-child),
     &:not(:nth-child(2)) {
       width: 28%;
@@ -160,9 +158,8 @@ section li img {
 //for desktop version
 @media only screen and (min-width: 1040px) {
   html {
-    font-size: 85%;
+    font-size: 65%;
   }
-
   header {
     height: 30vh;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 6% 100%);
@@ -170,9 +167,8 @@ section li img {
 
   .grid-floats li {
     padding: 2rem 2rem;
-    height: 50rem;
-    margin-top: 3rem;
-
+    height:50rem;
+    margin-top:3rem;
     &:not(:nth-child(3)),
     &:not(:nth-child(7)),
     &:not(:nth-child(11)) {
@@ -206,8 +202,9 @@ section li img {
 
   .grid-flex li {
     display: flex;
-    margin-top: 3rem;
+    margin-top:3rem;
     flex-direction: column;
+    flex-gap:3rem;
     align-items: center;
     justify-content: space-between;
     text-align: justify;
@@ -223,9 +220,8 @@ section li img {
   .grid-flex li:nth-child(3) {
     height: 60rem;
   }
-
   .grid-flex li:first-child {
     width: 47%;
-    height: 60rem;
+    height:60rem;
   }
 }

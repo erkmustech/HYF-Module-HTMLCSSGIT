@@ -121,13 +121,13 @@ h2,
 h3 {
   font-weight: 300;
   line-height: 1.15;
-  color: #00112c;
+  color: $black;
   margin-top: 0px;
 }
 
 h1 {
-  font-size: 64px;
-  line-height: 74px;
+  font-size: 40px;
+  line-height: 54px;
   font-weight: 700;
 }
 
@@ -294,9 +294,6 @@ nav {
   flex-basis: 100%;
   order: 1;
   text-align: left;
-  h1 {
-    font-size: 40px;
-  }
   p {
     font-size: 20px;
   }
@@ -746,6 +743,15 @@ nav {
     flex-basis: 624px;
     order: 1;
     text-align: left;
+  }
+  
+  h1 {
+  font-size: 64px;
+  line-height: 74px;
+  font-weight: 700;
+}
+  .hero p{
+    margin:2rem 0;  
   }
   
 

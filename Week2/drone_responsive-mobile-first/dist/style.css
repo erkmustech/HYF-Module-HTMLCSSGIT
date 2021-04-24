@@ -162,11 +162,6 @@ section li img {
     padding: 2rem;
     height: 50rem;
     margin-top: 3rem;
-  }
-
-  .grid-floats li:not(:nth-child(3)),
-  .grid-floats li:not(:nth-child(7)),
-  .grid-floats li:not(:nth-child(11)) {
     margin-right: 4rem;
   }
 

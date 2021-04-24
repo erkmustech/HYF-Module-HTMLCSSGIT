@@ -98,7 +98,7 @@ section li img {
   transition: all 0.3s ease;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   html {
     font-size: 60%;
   }
@@ -126,11 +126,11 @@ section li img {
     display: flex;
     flex-flow: wrap;
     height: 50rem;
+    gap: 3rem 1rem;
   }
 
   .grid-flex li {
     display: flex;
-    grid-gap: 2%;
     height: 50rem;
   }
   .grid-flex li:not(:first-child), .grid-flex li:not(:nth-child(2)) {
@@ -140,7 +140,7 @@ section li img {
 
   .grid-flex li:first-child,
 .grid-flex li:nth-child(2) {
-    width: 44%;
+    width: calc(56%+3rem);
     flex-direction: column;
     height: 55rem;
   }
@@ -156,17 +156,17 @@ section li img {
   }
 
   .grid-floats li {
-    padding: 2rem 2rem;
+    padding: 2rem;
     height: 50rem;
     margin-top: 3rem;
   }
   .grid-floats li:not(:nth-child(3)), .grid-floats li:not(:nth-child(7)), .grid-floats li:not(:nth-child(11)) {
-    margin-right: 3rem;
+    margin-right: 4rem;
   }
 
   .grid-floats li:first-child {
     float: left;
-    width: 47%;
+    width: calc(44% + 4rem);
     height: 60rem;
   }
 
@@ -192,7 +192,7 @@ section li img {
     display: flex;
     margin-top: 3rem;
     flex-direction: column;
-    flex-gap: 3rem;
+    gap: 4rem 3rem;
     align-items: center;
     justify-content: space-between;
     text-align: justify;
@@ -209,7 +209,7 @@ section li img {
   }
 
   .grid-flex li:first-child {
-    width: 47%;
+    width: calc(45% + 4rem);
     height: 60rem;
   }
 }

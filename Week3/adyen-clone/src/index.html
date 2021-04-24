@@ -4,17 +4,13 @@
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="dist/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Adyen Clone</title>
 
 </head>
 
 <body>
-
   <header class="header">
     <div class="overlay has-fade"></div>
     <nav class="container flex">
@@ -123,7 +119,7 @@
 
         <a href="#" class="button header-btn hide-for-mobile">Create an account</a>
           </div>
-    </nav>
+    
 
     <div class="header__menu has-fade">
       <span class="list_item--little nav-link" data-navigation="link"></span>
@@ -138,14 +134,8 @@
   </header>
 
   <section class="hero">
-    <div class="container flex-jc-sb">
-      <div class="hero__video">
-        <video class="bg-video__content" autoplay muted loop>
-          <source src="https://www.adyen.com/dam/jcr:76ebad83-5242-4613-b933-e4e7a578cebb/anthem-2%2520-1.mp4" type="video/mp4">
-          <source src="https://www.adyen.com/dam/jcr:76ebad83-5242-4613-b933-e4e7a578cebb/anthem-2%2520-1.mp4" type="video/webm">
-          Your browser is not supported!
-        </video>
-      </div>
+    <div class="container">
+
       <div class="hero__text container--pall">
         <h1>
           Accept payments everywhere
@@ -153,25 +143,39 @@
         <p>
           Meet the payments platform built for any business and every customer journey.
         </p>
-        <a href="#" class="button">Start yuur journey with us</a>
+       
+        <button> <a href="#" class="hero__btn">Start yuur journey with us</a></button>
+       
       </div>
+      
+      
+            <div class="hero__video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="https://www.adyen.com/dam/jcr:76ebad83-5242-4613-b933-e4e7a578cebb/anthem-2%2520-1.mp4" type="video/mp4">
+          <source src="https://www.adyen.com/dam/jcr:76ebad83-5242-4613-b933-e4e7a578cebb/anthem-2%2520-1.mp4" type="video/webm">
+          Your browser is not supported!
+        </video>
+      </div>
+      
+      
     </div>
   </section>
   <section class="seenon">
-    <div class="container seenon-company-logos">
+    <div class="container">
+    <div class="seenon-company-logos">
       <img src="https://i.postimg.cc/DyQ0tVyh/Screenshot-2021-04-19-at-12-52-30.png" alt="com-logo 1">
       <img src="https://i.postimg.cc/vHwDq8yX/Screenshot-2021-04-19-at-12-52-34.png" alt="com-logo 2">
       <img src="https://i.postimg.cc/T1g1dFVr/Screenshot-2021-04-19-at-12-52-41.png" alt="com-logo 3">
-      <img src="https://i.postimg.cc/c1nrBgpr/Screenshot-2021-04-19-at-12-52-47.png" alt="Seen on logo 3">
-      <img src="https://i.postimg.cc/qR9gd43J/Screenshot-2021-04-19-at-12-52-52.png" alt="com-logo 4">
-      <img src="https://i.postimg.cc/0yf6KTLn/Screenshot-2021-04-19-at-12-52-58.png" alt="com-logo 3">
+      <img src="https://i.postimg.cc/c1nrBgpr/Screenshot-2021-04-19-at-12-52-47.png" alt="Seen on logo 4">
+      <img src="https://i.postimg.cc/qR9gd43J/Screenshot-2021-04-19-at-12-52-52.png" alt="com-logo 5">
+      <img src="https://i.postimg.cc/0yf6KTLn/Screenshot-2021-04-19-at-12-52-58.png" alt="com-logo 6">
     </div>
+   </div>
   </section>
 
   <section class="feature">
     <div class="feature__content container container--pall">
       <div class="feature__flex">
-
         <div class="feature__item">
           <div class="feature__icon"><img src="https://www.adyen.com/dam/jcr:53bd7fe3-a956-4910-9c5b-7285ed401a3e/icon_world_green.svg" /></div>
           <div class="feature__title">
@@ -180,10 +184,10 @@
           <div class="feature__description">
             Expand into new markets with local acquiring and payment methods.
           </div>
-          <div class="feature__button">
-            <button>Payment methods <i class="fa fa-angle-right"></i></button>
+          <div >
+            <button class="feature__btn">Payment methods <i class="fa fa-angle-right"></i></button>
           </div>
-        </div>
+        </div> 
 
         <div class="feature__item">
           <div class="feature__icon"><img src="https://www.adyen.com/dam/jcr:53bd7fe3-a956-4910-9c5b-7285ed401a3e/icon_world_green.svg" /></div>
@@ -193,8 +197,8 @@
           <div class="feature__description">
             Optimize each transaction, increase conversions, and drive revenue.
           </div>
-          <div class="feature__button">
-            <button>RevenueAccelerate <i class="fa fa-angle-right"></i></button>
+          <div>
+            <button class="feature__btn">RevenueAccelerate <i class="fa fa-angle-right"></i></button>
           </div>
         </div>
 
@@ -206,8 +210,8 @@
           <div class="feature__description">
             Access expert advice and support from a dedicated team of payments specialists.
           </div>
-          <div class="feature__button">
-            <button>Start your journey <i class="fa fa-angle-right"></i></button>
+          <div>
+            <button class="feature__btn">Start your journey <i class="fa fa-angle-right"></i></button>
           </div>
         </div>
 
@@ -215,12 +219,16 @@
     </div>
 
   </section>
+      
+  
   <section class="mid-space">
     <div class="container">
       <div class="mid-space-content"></div>
     </div>
 
   </section>
+      
+      
   <section class="mid-text">
     <div class="container">
       <h1>
@@ -229,8 +237,8 @@
       <p>
         Let your shoppers use their preferred payment types, via a personalized checkout experience, online, in app, or in store, no matter where in the world they are.
       </p>
-      <div class="min-text__button">
-        <button>More about connected sales channeles <i class="fa fa-angle-right"></i></button>
+      <div>
+        <button class="mid-text__btn">More about connected sales channeles <i class="fa fa-angle-right"></i></button>
       </div>
     </div>
   </section>
@@ -248,7 +256,7 @@
       </div>
 
       <div class="story__content">
-        <img src="https://i.postimg.cc/W3TJM3zD/lush-logo-horizontal-svg.png" alt="">
+        <img src="https://i.postimg.cc/W3TJM3zD/lush-logo-horizontal-svg.png" alt="https://i.postimg.cc/W3TJM3zD/lush-logo-horizontal-svg.png">
         <p class="story__text">
           &rdquo;Working with the sales teams and account managers has been great. They've helped us get to market with our LUSH Pay solution much quicker than if we had tried to do it ourselves.&rdquo;
         </p>
@@ -329,4 +337,8 @@
   </footer>
 
   <script src="/app/js/script.js"></script>
+</body>
+<!-- partial -->
+<script src="./script.js"></script>
+
 </body>

@@ -172,7 +172,7 @@ section li img {
 
   .grid-floats li:first-child {
     float: left;
-    width: calc(44% + 4rem);
+    width: calc(43.5% + 4rem);
     height: 60rem;
   }
 
@@ -206,7 +206,7 @@ section li img {
   }
 
   .grid-flex li:not(:first-child) {
-    width: 22%;
+    width: 21.5%;
   }
 
   .grid-flex li:first-child,
@@ -216,7 +216,7 @@ section li img {
   }
 
   .grid-flex li:first-child {
-    width: calc(44% + 4rem);
+    width: calc(43.5% + 4rem);
     height: 60rem;
   }
 }

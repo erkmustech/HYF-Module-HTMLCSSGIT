@@ -264,12 +264,6 @@ button:hover::before,
 }
 
 @media (min-width: 1240px) {
-
-  h1 {
-    font-size: 44px;
-    line-height: 54px;
-  }
-
   .header .container {
     display: flex;
     height: 100px;

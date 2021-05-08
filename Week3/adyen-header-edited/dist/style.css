@@ -1,0 +1,383 @@
+a,
+a:visited {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  display: flex;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #777;
+  font-size: 1.6rem;
+}
+
+button {
+  height: 4rem;
+  background: #56ad24;
+  border: none;
+  padding: 0 2rem;
+  color: #eee;
+  border-radius: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa,
+.fas {
+  font-size: 2rem;
+  color: #777;
+  font-weight: 700;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header {
+  color: #1b1b1b;
+  height: 7.5rem;
+}
+
+.container {
+  width: 124.8rem;
+  margin: 0 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo-box {
+  display: flex;
+  width: 20rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo-box img {
+  padding-top: 20px;
+  height: 4rem;
+}
+
+.navigation {
+  display: flex;
+  flex: 5;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-checkbox {
+  padding-top: 40px;
+  display: none;
+}
+
+.navigation {
+  display: flex;
+  flex: 5;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav {
+  display: flex;
+  flex: 3;
+  justify-content: space-between;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  color: #363535;
+  list-style: none;
+}
+
+header li {
+  display: inline;
+  padding: 0 2rem;
+  list-style: none;
+  padding-top: 2rem;
+}
+
+header li:active,
+header li:hover {
+  border-top: 2px solid #2c8427;
+}
+
+header li a {
+  color: #1a1919;
+  font-size: 1.4rem;
+  transition: 0.3s;
+  list-style: none;
+  text-decoration: none;
+}
+
+.sign-up {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background: #56ad24;
+  border: none;
+  padding: 0 2rem;
+  color: #fff;
+  margin-bottom: 0rem;
+}
+
+.navigation__background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: #181b26;
+  z-index: 1000;
+  transform: scale(100);
+  transition: transform 0.5s;
+  opacity: 0.8;
+}
+
+.navigation__nav {
+  top: 80px;
+  position: fixed;
+  z-index: 1500;
+  transition: opacity 0.8s;
+  opacity: 1;
+  background-color: #fff;
+  width: 100%;
+}
+
+.navigation__list {
+  display: grid;
+  width: 60vw;
+  position: fixed;
+  background-color: #fff;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 100px;
+  list-style: none;
+  grid-column-gap: 30px;
+  font-size: 14px;
+  color: #777;
+}
+
+.green-title {
+  color: #0abd52;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+h3 {
+  font-weight: 300;
+  line-height: 1.15;
+  color: #00112c;
+  margin-top: 0px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+/* responsive for mob viewpoints */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    width: 95vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header {
+    height: 6rem;
+    position: relative;
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  .logo-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  logo {
+    width: 100px;
+  }
+
+  header h1 {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2rem;
+  }
+
+  .navigation {
+    position: absolute;
+  }
+
+  header li {
+    display: block;
+    padding: 0 1rem;
+    margin-top: 5px;
+  }
+
+  .nav-button {
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+
+  .nav-bar {
+    position: relative;
+    margin-top: 2.4rem;
+  }
+
+  .nav-bar,
+.nav-bar::before,
+.nav-bar::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #777;
+    display: inline-block;
+  }
+
+  .nav-bar::before,
+.nav-bar::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    transition: all 0.3s;
+  }
+
+  .nav-bar::before {
+    top: -0.7rem;
+  }
+
+  .nav-bar::after {
+    top: 0.7rem;
+  }
+
+  .nav-overlay {
+    height: 0;
+    width: 0;
+    display: none;
+    top: 6rem;
+    z-index: 1500;
+  }
+
+  .nav-checkbox:checked ~ .nav-overlay {
+    position: fixed;
+    width: 100%;
+    height: 60vh;
+    top: 20vh;
+    display: block;
+    transition: transform 0.5s;
+    background-color: #fff;
+    font-size: 1rem;
+    opacity: 0.8;
+    z-index: 1500;
+    color: #777;
+  }
+
+  header nav {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+
+  .nav-link {
+    color: black;
+    margin: 0;
+  }
+
+  .sign-up {
+    display: block;
+  }
+
+  header li {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  header li a {
+    color: black;
+    transition: 0.3s;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .nav-item {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+
+  .nav-link:link,
+.nav-link:visited {
+    display: block;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 300;
+    color: black;
+    transition: all 0.3s;
+    margin-top: 2rem;
+  }
+
+  .nav-link:hover,
+.nav-link:active {
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px solid green;
+  }
+
+  .nav-checkbox:checked + .nav-button .nav-bar {
+    background-color: transparent;
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+  }
+
+  .nav-checkbox:checked + .nav-button .nav-bar::before {
+    top: 0;
+    transform: rotate(45deg);
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+  }
+
+  .nav-checkbox:checked + .nav-button .nav-bar::after {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+  }
+}

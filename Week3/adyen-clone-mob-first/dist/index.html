@@ -1,17 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <title>CodePen - ADYEN-clone(mob-first)</title>
+  <link rel="stylesheet" href="./style.css">
 
-  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Adyen Clone</title>
-
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  <title>adyen clone- 2-version</title>
 </head>
 
 <body>
-  <header class="header">
+<!--   <header class="header">
     <div class="container">
       <div><a href="#" class="logo-box">
           <img class="logo" src="https://i.postimg.cc/zGJHxPjf/adyen-logo.png" alt="Adyen-logo" />
@@ -37,12 +42,122 @@
 
       </div>
     </div>
+  </header> -->
+ <header class="header container">
+    <div class="logo-box">
+      <a href="#">
+        <img class="logo" src="https://i.postimg.cc/2y44vYY6/adyen-logo.png" alt="Adyen-logo" />
+      </a>
+    </div>
+
+    <div class="navigation">
+
+      <navigation class="navigation">
+
+        <!--NOTE: mobile menu -->
+        <input type="checkbox" class="nav-checkbox" id="checkbox-menu">
+        <label for="checkbox-menu" class="nav-button">
+          <span class="nav-bar"></span>
+        </label>
+
+        <!-- NOTE: desktop menu -->
+        <nav class="nav-overlay">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#profile" class="nav-link sub_menu">Our solution<i class='fas fa-angle-down'></i></a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Customer</a></li>
+            <li class="nav-item"><a href="#work-experience" class="nav-link sub_menu">About us <i class='fas fa-angle-down'></i></a></li>
+            <li class="nav-item"><a href="#contact-form" class="nav-link sub_menu">Documentation <i class='fas fa-angle-down'></i></a></li>
+          </ul>
+
+          <ul class="sign-up">
+            <li class="nav-item "><a href="#profile" class="nav-link"><i class="fa fa-search"></i></a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Contact us</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Log in</a></li>
+          </ul>
+
+          <!--NOTE: header btn -->
+          <div class="header-button">
+            <button><a href="#" class="header-btn">Create an account</a>
+            </button>
+          </div>
+
+          <!--            NOTE: sub menue -->
+          <div class="navigation__background hidden">&nbsp;</div>
+          <nav class="navigation__nav hidden">
+            <div class="navigation__list">
+              <div class="sub-menu-item">
+                <h3>Our solution</h3>
+                <p>Lorem ipsum dolor sit amet consectetur addolore expedita, eos odit inventore aliquid ipsum.</p>
+              </div>
+              <div class="sub-menu-item">
+                <h3>Products</h3>
+                <li>
+                  <h4 class="green-title">Online Peyments</h4>
+                  <p>Lorem obcaecati quas quos deleniti ad a necessitatibus.</p>
+                </li>
+                <li>
+                  <h4 class="green-title">Point of sale</h4>
+                  <p>Lorem obcaecati quas quos deleniti ad a necessitatibus.</p>
+                </li>
+                <li>
+                  <h4 class="green-title">Platforms</h4>
+                  <p>Lorem obcaecati quas quos deleniti ad a necessitatibus.</p>
+                </li>
+
+                <li>
+                  <h4 class="green-title">Unified Commerce</h4>
+                  <p>Lorem obcaecati quas quos deleniti ad a necessitatibus.</p>
+
+              </div>
+              <div class="sub-menu-item">
+                <h3> Features</h3>
+                <li>
+                  <h4 class="green-title">Global acquiring</h4>
+                  <p>Local payment connections around the world</p>
+                </li>
+                <li>
+                  <h4 class="green-title">Payment methods</h4>
+                  <p>Local payment connections around the world</p>
+                </li>
+                <li>
+                  <h4 class="green-title">Risk management</h4>
+                  <p>Optimize payments for more revenue</p>
+                </li>
+                <li>
+                  <h4 class="green-title">Revenue optimization</h4>
+                  <p>Data-rich insights from all channels and locations</p>
+                </li>
+              </div>
+              <div class="sub-menu-item">
+                <h3>How we work</h3>
+                <li>
+                  <h4 class="green-title">Getting started</h4>
+                  <p>Lorem obcaecati quas quos deleniti ad a necessitatibus.</p>
+                </li>
+                <li>
+                  <h4 class="green-title">Point of sale</h4>
+                  <p>Lorem obcaecati quas quos deleniti ad a necessitatibus.</p>
+                </li>
+                <li>
+                  <h4 class="green-title">Platforms</h4>
+                  <p>Lorem obcaecati quas quos deleniti ad a necessitatibus.</p>
+                </li>
+
+                <li>
+                  <h4 class="green-title">Unified Commerce</h4>
+                  <p>Lorem obcaecati quas quos deleniti ad a necessitatibus.</p>
+
+              </div>
+            </div>
+          </nav>
+          <!-- submenu over -->
+
+        </nav>
+      </navigation>
   </header>
 
-  <section class="hero">
-    <div class="container">
-
-      <div class="hero__text container--pall">
+  <section class="container hero_container">
+      <div class="hero__text">
         <h1>
           Accept payments everywhere
         </h1>
@@ -64,6 +179,7 @@
 
     </div>
   </section>
+  
   <section class="seenon">
     <div class="container">
       <div class="seenon-company-logos">
@@ -128,11 +244,9 @@
     <div class="container">
       <div class="mid-space-content"></div>
     </div>
-
   </section>
 
-  <section class="mid-text">
-    <div class="container">
+  <section class="mid-text container mid-text_container">
       <h1>
         Accept payments across all sales channels
       </h1>
@@ -142,7 +256,6 @@
       <div>
         <button class="mid-text__btn">More about connected sales channeles <i class="fa fa-angle-right"></i></button>
       </div>
-    </div>
   </section>
 
   <section class="story">
@@ -241,3 +354,8 @@
   <script src="./script.js"></script>
 
 </body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
